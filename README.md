@@ -39,10 +39,14 @@ After hammering out differences in the results, plans are to focus on
 # Usage
 
 ```javascript
-import rake from 'rake'
-rake(text, 'path/to/stopwordfile.txt').then(keywords => {
-  // Do something
-})
+> var rake = require('../dist/index').default
+undefined
+> rake('Compatibility of systems of linear constraints over the set of natural numbers', 'test/data/salton_1971_smartstoplist.txt').then(console.log)
+{ 'natural numbers': 4,
+  'linear constraints': 4,
+  set: 1,
+  systems: 1,
+  compatibility: 1 }
 ```
 
 ## Stopword lists

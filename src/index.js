@@ -154,7 +154,6 @@ export async function loadStopWords (path) {
 export default async function rake (text, stopWordsPath, minCharLength=3, maxWordsLength=5, minKeywordFrequency=1) {
   let stopWordPattern = await buildStopWordRegex(stopWordsPath)
   let sentenceList = splitSentences(text)
-  console.log('sentenceList', sentenceList)
   let phraseList = generateCandidateKeywords(sentenceList, stopWordPattern, minCharLength, maxWordsLength)
   let wordScores = calculateWordScores(phraseList)
   let keywordCandidates = generateCandidateKeywordScores(phraseList, wordScores, minKeywordFrequency)

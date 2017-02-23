@@ -8,7 +8,7 @@ import rake, {
   generateCandidateKeywords,
   generateCandidateKeywordScores,
   calculateWordScores,
-} from '../index'
+} from '../src/index'
 
 
 // This is the text used in the paper
