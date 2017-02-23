@@ -35,6 +35,8 @@ After hammering out differences in the results, plans are to focus on
   [here](https://www.ijarcsse.com/docs/papers/Volume_6/5_May2016/V6I5-0392.pdf)
 * Options to control result format (number, result|result+rank, etc)
 * Include default stopword list.
+* Improve handling of special characters and italics
+* Deal with sentences that have been split over multiple lines (sentence now ends with -)
 
 # Usage
 
