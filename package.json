@@ -1,7 +1,7 @@
 {
-  "name": "rake",
+  "name": "rapid-automated-keyword-extraction",
   "version": "1.0.0",
-  "description": "An implementation of the Rapid Automated Keyword Extraction algorithm",
+  "description": "An javascript implementation of the Rapid Automated Keyword Extraction (RAKE) algorithm",
   "main": "dist/index.js",
   "jsnext:main": "src/index.js",
   "scripts": {
